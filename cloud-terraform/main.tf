@@ -8,9 +8,9 @@ terraform {
 }
 
 provider "yandex" {
-  token     = "y0__wgBEMy79B********"       # OAuth-токен
-  cloud_id  = "b1gqi*******"      # Cloud ID
-  folder_id = "b1gtehk*****l"      # ID
+  token     = "y0__********"       # OAuth-токен
+  cloud_id  = "b*******"      # Cloud ID
+  folder_id = "b*****l"      # ID
   zone      = "ru-central1-a"             # Указание региона провайдера
   }
 
@@ -40,7 +40,7 @@ resource "yandex_compute_instance" "testvm" {
   }
 
   network_interface {
-    subnet_id = "e9bnml*****"
+    subnet_id = "e*****"
     nat       = true
   }
 
